@@ -1,5 +1,5 @@
 <h3
-    onclick="javascript:window.open('{{ route('telescope') }}', '_{{ $target }}')"
+    onclick="javascript:window.open('{{ route('telescope') }}', '_{{ $target ?? 'self' }}')"
     class="cursor-pointer flex items-center font-normal dim text-white mb-6 text-base no-underline"
 >
     @if ($label !== null)
